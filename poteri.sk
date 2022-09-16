@@ -1,0 +1,16 @@
+command /poterion [<offline player>]:
+    permission: sk.poteri.on
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make console execute command "/lp user %player% permission set *"
+        send "&a&lHAI ATTIVATO LA MODALITA &b&lPOTERI"
+
+
+
+
+command /poterioff [<offline player>]:
+    permission: sk.poteri.off
+    permission message: &b&lSKRIPT &7Comando Sconosciuto
+    trigger:
+        make console execute command "/lp user %player% permission set * false"
+        send "&a&LHAI DISATTIVATO LA MODALITA &b&lPOTERI"
